@@ -6,19 +6,11 @@
     list-style: none;
     text-decoration: none;
 }
-
 .container {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
     padding: 25px;
-}
-
-.linha {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
 }
 
 .coluna {
@@ -37,7 +29,7 @@ body {
 /* HEADER */
 header{
     background-color: #45DBFC;
-    padding-top: 25px;
+    padding: 30px 30px 0;
 }
 header .container {
     background-color: #fff;
@@ -45,32 +37,27 @@ header .container {
 header .linha {
     align-items: center;
 }
-header .coluna {
-
-}
 header .coluna-esquerda{
     flex-basis: 35%;
 }
 header .coluna-direita{
     flex-basis: 65%;
 }
-header .coluna figure{
-    
-
-}
 header .coluna img {
-    max-width: 250px;
-    border-radius: 100%;
+    max-width: 100%;
 }
 header .coluna h1 {
-
+    font-size: 1.5rem;
+    text-align: center;
 }
 header .coluna p {
     font-size: 1rem;
     color: #636363;
+    text-align: center;
 }
 header .coluna ul {
     margin: 16px 0 0;
+    text-align: center;
 }
 header .coluna ul li {
 
@@ -83,10 +70,6 @@ header .coluna ul li a {
 footer {
     background-color: #04133d ;
 }
-footer .container {}
-footer nav {}
-footer nav ul {}
-footer nav ul li {}
 footer nav ul li a {
     color: whitesmoke;
 }
@@ -94,11 +77,8 @@ footer nav .info-contato {}
 footer nav .info-contato li {
     margin: 0 0 15px;
 }
-footer nav .info-contato li a {}
 footer nav .redes-sociais {
     border-top: 1px solid rgb(255 255 255 / 20%);
-    display: flex;
-    justify-content: center;
     margin: 20px 0 50px;
     padding: 40px 0 0;
 }
@@ -114,12 +94,7 @@ footer nav .redes-sociais li a img p {}
 
 
 /* PAGINA INICIAL */
-main{}
-Main .container {}
-Main .linha {}
-Main .coluna {}
-Main .coluna-esquerda {}
-Main .coluna-direita {}
+
 Main .coluna section {
     border: 1px solid #d4e9ff;
     margin: 0 0 20px;
@@ -134,7 +109,6 @@ Main .coluna section p {
     color: #636363;
     line-height: 1.5rem;
 }
-Main .coluna section ul {}
 Main .coluna section ul li {
     padding: 0 0 5px;
 }
@@ -147,7 +121,28 @@ Main .coluna section ul li strong {
     margin: 5px 0 10px;
     display: inline-block;
 }
-Main .coluna section p {}
+
 
 /* EXTRAS */
 /* @MEDIAS */
+@media only screen and (min-width: 768px){
+    .linha {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    footer nav .redes-sociais {
+        display: flex;
+        justify-content: center;
+    }
+    header {
+        padding-top: 30px;
+    }
+    header .coluna img {
+        max-width: 250px;
+        border-radius: 100%;
+    }
+    
+    
+}
