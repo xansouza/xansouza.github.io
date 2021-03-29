@@ -1,8 +1,154 @@
-body {
-    background-color: bisque;
+@charset "UTF-8";
+
+* {
+    list-style: none;
+    text-decoration: none;
 }
 
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    color: chocolate;
+body {
+    background-image: linear-gradient(to right, #F2F2F2, #84B9BF, #46767A);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
+.container {
+    
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+}
+
+#areatotal {
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #316159;
+    background-color: #fff;
+    width: 900px;
+    padding: 10px;
+    margin: auto;
+}
+
+/* Cabeçalho / Header */
+
+header {}
+header div {}
+header div h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 0 10px;
+}
+header p {
+    padding: 0 10px;
+}
+
+header div ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 900px;
+    background: #159cb0 url(imagens/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+header div ul li {
+    float: left;
+}
+header div ul li a {
+    display: block;
+    padding: 0 2em;
+    line-height: 2em;
+    text-decoration: none;
+    color: #fff;
+    background: url(imagens/divisor.png) repeat-y left top;
+}
+ul .primeiro a {
+    background: none;
+}
+header div ul li a:hover {
+    color: #085662;
+    background: #44cade;
+}
+
+/* Corpo */ 
+ main {}
+ main .container {}
+ main .linha {}
+ main .coluna {}
+ main .coluna-esquerda {
+    flex-basis: 30%;
+}
+ main .coluna-direita {
+    flex-basis: 68%;
+}
+ main .publi img {
+    padding: 0px;
+    width: 230px;
+    align-items: center;
+ }
+ main .coluna section {
+    border: 1px solid #d4e9ff;
+    margin: 0 0 20px;
+    padding: 20px;
+ }
+ main div {
+
+ }
+ main div section {
+
+ }
+ main div section h2 {
+
+ }
+ main div section h2 p {
+
+ }
+
+/* Rodapé */
+
+footer {
+    background-color: #04133d ;
+}
+footer nav ul li a {
+    color: whitesmoke;
+}
+footer nav .info-contato {}
+footer nav .info-contato li {
+    margin: 0 0 15px;
+}
+footer nav .redes-sociais {
+    border-top: 1px solid rgb(255 255 255 / 20%);
+    margin: 20px 0 10px;
+    padding: 40px 0 0;
+}
+footer nav .redes-sociais li {
+    margin: 0 15px;
+    text-align: center;
+}
+footer nav .redes-sociais li a {}
+footer nav .redes-sociais li a img {
+    width: 40px;
+}
+footer nav .redes-sociais li a img p {}
+
+/* @MEDIAS */
+@media only screen and (min-width: 768px){
+    .linha {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    footer nav .redes-sociais {
+        display: flex;
+        justify-content: center;
+    }
+    header {
+        padding-top: 30px;
+    }
+
+/* Minhas informações de estilo 
+
+cor 1 -> #F2F2F2
+cor 2 -> #84B9BF
+cor 3 -> #46767A
+cor 4 -> #2D5951
+cor 5 -> #316159
+
+*/
